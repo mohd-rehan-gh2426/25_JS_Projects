@@ -57,6 +57,7 @@ console.log(getAccordionTitles);
 console.log("=============================================");
 
 getAccordionTitles.forEach((currentItem) => {
+  // currentItem refers to the current accordion title in the loop.
   currentItem.addEventListener("click", (event) => {
     if (currentItem.classList.contains("active")) {
       currentItem.classList.remove("active");
